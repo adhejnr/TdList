@@ -13,21 +13,30 @@ document.querySelector('#pressione').onclick = function(){
                 </button>
             </div>
         `;
-
         var segtarefas = document.querySelectorAll(".deletar");
         for(var i=0; i<segtarefas.length; i++){
             segtarefas[i].onclick = function(){
                 this.parentNode.remove();
             }
         }
-
         var tarefas = document.querySelectorAll(".tarefa");
         for(var i=0; i<tarefas.length; i++){
             tarefas[i].onclick = function(){
                 this.classList.toggle('completo');
             }
         }
-
+ 
         document.querySelector("#novatarefa input").value = "";
     }
+    function Cadastrar(){
+ 
+        document.getElementById('tudo').style.display="block";
+ 
+      }
+        function Exibir(){
+ 
+          document.getElementById('tudo').style.display="none";
+ 
+ 
+        }
 }
